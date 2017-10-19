@@ -1,0 +1,128 @@
+@mixin nums($w:100%,$h:100%){
+  width: $w;
+  height: $h;
+}
+html,body,.wrap{
+  @include nums();
+  display: flex;
+  flex-direction: column;
+  overflow: hidden;
+  background: #eee;
+}
+.bar.bar-header{
+  background: linear-gradient(to right, #FE8E06, #F96F02, #FF5100);
+  position: relative;
+  h1{
+    color: #fff;
+    span{
+      position: absolute;
+      top: 0;
+      right: 0;
+      font-size: .26rem;
+    }
+  }
+}
+.content{
+  width: 100%;
+  flex: 1;
+  position: absolute;
+  top: 44px;
+  bottom: 44px;
+}
+.items{
+  display: flex;
+  background: #fff;
+}
+.box-tit{
+  height: 1rem;
+  line-height: 1rem;
+  background: #fff;
+  padding: 0 .5rem;
+  font-size: .32rem;
+  border-bottom: 1px solid #ccc;
+  i.icon{
+    font-size: .5rem;
+  }
+}
+img{
+  @include nums($w:2rem,$h:2rem);
+  margin-right: .3rem;
+}
+.list{
+  padding:0;
+  padding-bottom: 10px;
+}
+.items{
+  position: relative;
+  padding: 10px 0;
+  .checkbox{
+    padding-top: 40px;
+  }
+  h1{
+    .tit{
+      font-size: .3rem;
+      color: #606261;
+    }
+    .color{
+      color: #AFAFAF;
+      margin: .2rem 0;
+    }
+    .price{
+      color: #D0712D;
+      font-size: .36rem;
+    }
+    span{
+      position: absolute;
+      top: 1.2rem;
+      right: .3rem;
+      font-size: .4rem;
+    }
+  }
+}
+.con-bottom{
+  background: #fff;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  @include nums($h:1rem);
+  border-top: 1px solid #ccc;
+  display: flex;
+  .count{
+    flex: 7;
+  }
+  .checkbox{
+    display: flex;
+  }
+  span{
+    padding: .1rem 0 0 .1rem;
+  }
+  .btns{
+    flex: 3;
+    button{
+      @include nums();
+      border:none;
+      color: #fff;
+      background: linear-gradient(to right, #FE8E06, #F96F02, #FF5100);
+    }
+  }
+}
+.bar.bar-footer{
+  @include nums($h:1rem);
+  display: flex;
+  border-top: 1px solid #ccc;
+  a{
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+  }
+}
+.reduce{
+  padding: 5px 50px;
+}
+.count{
+  padding:5px 30px;
+}
+.add{
+  padding:5px 5px;
+}

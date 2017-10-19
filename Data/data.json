@@ -1,0 +1,32 @@
+[
+  {
+    "id": 1,
+    "name": "美的家电",
+    "image": "Content/img/img1.jpg",
+    "title": "美的生活电器旗舰店烫衣服挂烫机家用蒸汽双杆苏宁京东商城",
+    "state": true,
+    "num": 1,
+    "price": 1500,
+    "color": "玫瑰金"
+  },
+  {
+    "id": 2,
+    "name": "苏宁家电",
+    "image": "Content/img/img2.jpg",
+    "title": "美的生活电器旗舰店烫衣服挂烫机家用蒸汽双杆苏宁京东商城",
+    "state": true,
+    "num": 1,
+    "price": 2300,
+    "color": "绿色"
+  },
+  {
+    "id": 3,
+    "name": "京东家电",
+    "image": "Content/img/img3.jpg",
+    "title": "美的生活电器旗舰店烫衣服挂烫机家用蒸汽双杆苏宁京东商城",
+    "state": false,
+    "num": 1,
+    "price": 3600,
+    "color": "蓝色"
+  }
+]
